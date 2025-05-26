@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #ff6347;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+.social-links {
+  margin-top: 0.5rem;
+}
+.social-links a {
+  margin: 0 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #444;
+    padding: 1rem;
+  }
+  .nav-links a {
+    margin-bottom: 1rem;
+  }
+  .menu-toggle {
+    display: block;
+  }
+
+  header.active .nav-links {
+    display: flex;
+  }
+}
